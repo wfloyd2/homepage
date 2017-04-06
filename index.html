@@ -10,64 +10,8 @@
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-
-      <style>
-      h1 {
-    font-size: 50px;
-    text-align: center;
-}
-#scrollArea {
-  height: auto;
-  overflow: auto;
-}
-
-#bottom {
-  display: block;
-  margin-top: 2800px;
-}
-#but-bottom {
-  color: white;
-}
-#but-middle {
-  color: white;
-}
-#accomplishments {
-  display: block;
-  margin-top: 1400px;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-    border-right:1px solid #bbb;
-}
-
-li:last-child {
-    border-right: none;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-
-
-    </style>
-
+<link rel='stylesheet' href='style.css'>
+<script type="text/javascript" src='controller.js'></script>
   <script>
   window.console = window.console || function(t) {};
 </script>
@@ -83,11 +27,11 @@ li a:hover:not(.active) {
 </head>
 
 <body translate="no" >
-
+<body background="steel.jpg">
   <div ng-app="myApp" class="container">
 <div id="scrollArea" ng-controller="ScrollController">
   <div id="top">
-  <body>
+<h1> William Floyd</h1>
 
 <ul>
   <li><a rel="nofollow" rel="noreferrer"class="active" href="#home">Home</a></li>
@@ -116,34 +60,11 @@ li a:hover:not(.active) {
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
 
-    <script>
+<script src='controller.js'></script>
 
-angular.module('myApp', [])
-.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
-  function($scope, $location, $anchorScroll) {
-    $scope.gotoDiv = function(loc) {
-      // set the location.hash to the id of
-      // the element you wish to scroll to.
-      $location.hash(loc);
-
-      // call $anchorScroll()
-      $anchorScroll();
-    };
-    $scope.gotoTop = function() {
-      // set the location.hash to the id of
-      // the element you wish to scroll to.
-      $location.hash('top');
-
-      // call $anchorScroll()
-      $anchorScroll();
-    };
-
-  }]);
-  //# sourceURL=pen.js
-  </script>
-
-
-
-
+<hr>
+<center>
+<h3>Contact Info:</h3>
+</center>
 </body>
 </html>
