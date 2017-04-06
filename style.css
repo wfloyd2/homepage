@@ -1,7 +1,7 @@
 h1 {
 font-size: 50px;
 text-align: center;
-
+margin-top: 20px;
 }
 #scrollArea {
 height: auto;
@@ -27,6 +27,7 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
+border-radius: 10px;
 background-color: #333;
 }
 
