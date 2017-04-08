@@ -1,0 +1,68 @@
+<html >
+
+<head>
+  <meta charset="UTF-8">
+
+
+  <title>William Floyd Homepage</title>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script type="text/javascript" src='controller.js'></script>
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+
+</head>
+
+<body translate="no" >
+<body background="steel.jpg">
+  <div ng-app="myApp" class="container">
+<div id="scrollArea" ng-controller="ScrollController">
+  <div id="top">
+<h1> William Floyd</h1>
+
+<ul>
+  <li><a rel="nofollow" rel="noreferrer"class="active" href="#home" ng-click="gotoDiv('education')">Education</a></li>
+  <li><a rel="nofollow" rel="noreferrer"id='but-middle' ng-click="gotoDiv('accomplishments')">Accomplishments</a></li>
+  <li><a rel="nofollow" rel="noreferrer"href="#portfolio">Links</a></li>
+  <li><a rel="nofollow" rel="noreferrer"href="#contact">Contact</a></li>
+
+  <li style="float:right"><a rel="nofollow" rel="noreferrer"id='but-bottom' ng-click="gotoDiv('bottom')">Bottom</a></li>
+</ul>
+
+
+
+  <button class="btn" ng-click="gotoDiv('bottom')">Go to bottom</button>
+  <a rel="nofollow" rel="noreferrer"ng-click="gotoDiv('accomplishments')">Go to Middle</a>
+  </div>
+  <center>
+
+  <div id='education' class='container-fluid'>
+  <h3><b>Education</b></h3>
+  <p>University of California, Irvine</p>
+  </div>
+  <a rel="nofollow" rel="noreferrer"id= "accomplishments" >we out Here</a>
+  <a rel="nofollow" rel="noreferrer"ng-click="gotoTop()">Back to Top</a>
+  <a rel="nofollow" rel="noreferrer"id="bottom"> You're at the bottom!</a>
+    <a rel="nofollow" rel="noreferrer"ng-click="gotoTop()">Back to Top</a>
+  </center>
+</div>
+</div>
+</body>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+
+<script src='controller.js'></script>
+
+<hr>
+<center>
+<h3>Contact Info:</h3>
+</center>
+</body>
+</html>
